@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+
+    <!-- costume style  -->
     <style>
         body {
             font-family: "Mulish", sans-serif;
@@ -28,7 +30,7 @@
 </head>
 
 <body>
-    <header class="container mx-auto">
+    <header class="container mx-auto px-2 lg:px-0">
         <!-- navber section  -->
         <section class="">
             <div class="navbar py-4">
@@ -84,209 +86,260 @@
         </section>
 
         <!-- banner section -->
-        <section class="">
+        <section class=" border-2 min-h-screen  bg-[#12132D] rounded-[48px] ">
 
+            <div class=" flex flex-col relative">
+                <img class="min-h-screen" src="./images/bgbanner.png" alt="">
+
+                <div class="absolute  bottom-0 top-0 lg:top-40 left-10 lg:left-28">
+                    <div class="flex flex-col lg:flex-row gap-0 lg:gap-40 "> 
+                        <!-- banner left part  -->
+                        <div class="flex-1 hero-content">
+                            <div class="max-w-md">
+                                <h1 class="text-5xl font-bold text-white">
+                                    Welcome to the <br>
+                                    <span>ReTro</span> Forum
+                                </h1>
+                                <p class="py-6 text-white">Share your favorite opinion and win and wp forum coffee mug!</p>
+                                <div>
+                                    <label class="input input-bordered flex items-center gap-2">
+                                        <input type="text" class="grow" placeholder="Search here anything" />
+                                        <button class="badge badge-info">Search</button>
+                                    </label>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <!-- banner right part  -->
+                        <div class="border-2 bg-white p-5 lg:p-10 space-y-5 text-2xl rounded-2xl">
+                            <div class="flex justify-between lg:gap-20">
+                                <h1>Registered Users</h1>
+                                <h1>01</h1>
+                            </div>
+                            <div class="flex justify-between lg:gap-20">
+                                <h1>Forum</h1>
+                                <h1>05</h1>
+                            </div>
+                            <div class="flex justify-between lg:gap-20">
+                                <h1>Topics</h1>
+                                <h1>10</h1>
+                            </div>
+                            <div class="flex justify-between lg:gap-20">
+                                <h1>Replies</h1>
+                                <h1>03</h1>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+           
         </section>
+
+
     </header>
 
     <!-- end header section  -->
 
-<!-- start main section  -->
-<main class="container mx-auto mt-16 px-2 lg:p-1">
-    <!-- Let’s Discuss section  -->
-    <section class="mt-10">
-        <!-- discussion title part  -->
-        <div class="text-center">
-            <h1 class="text-4xl font-extrabold">Let’s Discuss</h1>
-            <p class="text-lg px-1 lg:px-96">Yes, you can run unit tests and view the results directly within the
-                app. The
-                integrated testing features allow for a streamlined .</p>
-        </div>
+    <!-- start main section  -->
+    <main class="container mx-auto mt-32 lg:mt-10 px-2 lg:p-1">
+        <!-- Let’s Discuss section  -->
+        <section class="mt-10">
+            <!-- discussion title part  -->
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold">Let’s Discuss</h1>
+                <p class="text-lg px-1 lg:px-96">Yes, you can run unit tests and view the results directly within the
+                    app. The
+                    integrated testing features allow for a streamlined .</p>
+            </div>
 
-        <!-- post section  -->
-        <div class="mt-12 flex flex-col lg:flex-row gap-5">
-            <!-- left part -->
-            <div class="flex-1 border-2 border-[#797DFC] rounded-xl bg-[#797dfc1a] flex gap-3 p-5">
-                <div>
-                    <img class="rounded-2xl" src="./images/bfebba8852c55c6d88733f6b810c30d5.png" alt="">
-                </div>
-                <div>
-                    <div class="flex gap-4 text-lg font-bold">
-                        <h1>#comedy</h1>
-                        <h1>authore : <span>imran khan</span></h1>
+            <!-- post section  -->
+            <div class="mt-12 flex flex-col lg:flex-row gap-5">
+                <!-- left part -->
+                <div class="flex-1 border-2 border-[#797DFC] rounded-xl bg-[#797dfc1a] flex gap-3 p-5">
+                    <div>
+                        <img class="rounded-2xl" src="./images/bfebba8852c55c6d88733f6b810c30d5.png" alt="">
                     </div>
-                    <h1 class="text-2xl font-bold my-4">10 Kids Unaware of Their Halloween Costume</h1>
-                    <p class="text-xl text-[#12132d99] font-bold">It’s one thing to subject yourself to ha Halloween
-                        costume mishap because, hey that’s your prerogative</p>
-                    <hr class="my-4">
-                    <div class="flex justify-between">
-                        <ul class="flex gap-5 text-[#12132d99] text-2xl">
-                            <li class=""><i class="fa-regular fa-message"></i><span class="ml-4">1050</span></li>
-                            <li><i class="fa-solid fa-eye"></i><span class="ml-4">1050</span></li>
-                            <li><i class="fa-regular fa-clock"></i><span class="ml-4">1050</span></li>
+                    <div>
+                        <div class="flex gap-4 text-lg font-bold">
+                            <h1>#comedy</h1>
+                            <h1>authore : <span>imran khan</span></h1>
+                        </div>
+                        <h1 class="text-2xl font-bold my-4">10 Kids Unaware of Their Halloween Costume</h1>
+                        <p class="text-xl text-[#12132d99] font-bold">It’s one thing to subject yourself to ha Halloween
+                            costume mishap because, hey that’s your prerogative</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between">
+                            <ul class="flex gap-5 text-[#12132d99] text-2xl">
+                                <li class=""><i class="fa-regular fa-message"></i><span class="ml-4">1050</span></li>
+                                <li><i class="fa-solid fa-eye"></i><span class="ml-4">1050</span></li>
+                                <li><i class="fa-regular fa-clock"></i><span class="ml-4">1050</span></li>
 
-                        </ul>
-                        <div class="text-3xl text-green-600">
-                            <button>
-                                <i class="fa-solid fa-envelope-circle-check"></i>
-                            </button>
+                            </ul>
+                            <div class="text-3xl text-green-600">
+                                <button>
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right part -->
+                <div class="rounded-2xl p-5 bg-[#12132d0d]">
+                    <div class="flex gap-10 p-5">
+                        <h1 class="text-2xl font-bold">Title </h1>
+                        <div class="flex gap-2">
+                            <i class="fa-solid fa-check-double text-[#3DCE09] text-2xl"></i>
+                            <h1 class="text-2xl font-bold text-[#12132d99]">Mark as read (<span>4</span>)</h1>
+                        </div>
+                    </div>
+
+                    <!-- read list -->
+                    <div>
+                        <div class=" p-5 bg-white rounded-2xl flex gap-5 justify-center">
+                            <h1 class="text-xl font-bold">10 Kids Unaware of Their <br>
+                                Halloween Costume
+                            </h1>
+                            <div class="flex items-center text-2xl">
+                                <i class="fa-solid fa-eye "></i><span class="ml-4">1050</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- fouram section -->
+        <section class="mt-20">
+            <div class="hero bg-[#12132D] pt-10 rounded-3xl">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img src="./images/joinforum.png" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div class="pl-10">
+                        <h1 class="text-5xl font-bold text-white">Join Our Forum</h1>
+                        <p class="py-6 text-xl font-light text-white">Share your favorite opinion and win and wp forum
+                            coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+                        <button class="btn border-none text-white text-xl rounded-full bg-[#797DFC] px-8 ">Registered
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest post section  -->
+        <section class="mt-20">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold">Latest Posts</h1>
+                <p class="text-lg px-1 lg:px-96">Yes, you can run unit tests and view the results directly within the
+                    app. The
+                    integrated testing features allow for a streamlined .</p>
+            </div>
+
+            <!-- card section  -->
+            <div class="mt-10 flex flex-col gap-3 lg:flex-row justify-around">
+                <!-- 1st card  -->
+                <div class="card w-96 bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body ">
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <p>29 January 2024</p>
+                        </div>
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions">
+                            <img src="./images/Ellipse 1.png" alt="">
+                            <div class="">
+                                <h1 class="font-semibold">Cameron Williamson</h1>
+                                <p>unknown</p>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-            </div>
-
-            <!-- right part -->
-            <div class="rounded-2xl p-5 bg-[#12132d0d]">
-                <div class="flex gap-10 p-5">
-                    <h1 class="text-2xl font-bold">Title </h1>
-                    <div class="flex gap-2">
-                        <i class="fa-solid fa-check-double text-[#3DCE09] text-2xl"></i>
-                        <h1 class="text-2xl font-bold text-[#12132d99]">Mark as read (<span>4</span>)</h1>
-                    </div>
-                </div>
-
-                <!-- read list -->
-                <div>
-                    <div class=" p-5 bg-white rounded-2xl flex gap-5 justify-center">
-                        <h1 class="text-xl font-bold">10 Kids Unaware of Their <br>
-                            Halloween Costume
-                        </h1>
-                        <div class="flex items-center text-2xl">
-                            <i class="fa-solid fa-eye "></i><span class="ml-4">1050</span>
+                <!-- 2nd card  -->
+                <div class="card w-96 bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body ">
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <p>29 January 2024</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- fouram section -->
-    <section class="mt-20">
-        <div class="hero bg-[#12132D] pt-10 rounded-3xl">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-                <img src="./images/joinforum.png" class="max-w-sm rounded-lg shadow-2xl" />
-                <div class="pl-10">
-                    <h1 class="text-5xl font-bold text-white">Join Our Forum</h1>
-                    <p class="py-6 text-xl font-light text-white">Share your favorite opinion and win and wp forum
-                        coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
-                    <button class="btn border-none text-white text-xl rounded-full bg-[#797DFC] px-8 ">Registered
-                        Now</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest post section  -->
-    <section class="mt-20">
-        <div class="text-center">
-            <h1 class="text-4xl font-extrabold">Latest Posts</h1>
-            <p class="text-lg px-1 lg:px-96">Yes, you can run unit tests and view the results directly within the
-                app. The
-                integrated testing features allow for a streamlined .</p>
-        </div>
-
-        <!-- card section  -->
-        <div class="mt-10 flex flex-col gap-3 lg:flex-row justify-around">
-            <!-- 1st card  -->
-            <div class="card w-96 bg-base-100 border">
-                <figure class="px-10 pt-10">
-                    <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
-                        class="rounded-xl" />
-                </figure>
-                <div class="card-body ">
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <p>29 January 2024</p>
-                    </div>
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions">
-                        <img src="./images/Ellipse 1.png" alt="">
-                        <div class="">
-                            <h1 class="font-semibold">Cameron Williamson</h1>
-                            <p>unknown</p>
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions">
+                            <img src="./images/Ellipse 1.png" alt="">
+                            <div class="">
+                                <h1 class="font-semibold">Cameron Williamson</h1>
+                                <p>unknown</p>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
-            </div>
-            <!-- 2nd card  -->
-            <div class="card w-96 bg-base-100 border">
-                <figure class="px-10 pt-10">
-                    <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
-                        class="rounded-xl" />
-                </figure>
-                <div class="card-body ">
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <p>29 January 2024</p>
                     </div>
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions">
-                        <img src="./images/Ellipse 1.png" alt="">
-                        <div class="">
-                            <h1 class="font-semibold">Cameron Williamson</h1>
-                            <p>unknown</p>
+                </div>
+                <!-- 3rd card  -->
+                <div class="card w-96 bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body ">
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <p>29 January 2024</p>
                         </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- 3rd card  -->
-            <div class="card w-96 bg-base-100 border">
-                <figure class="px-10 pt-10">
-                    <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
-                        class="rounded-xl" />
-                </figure>
-                <div class="card-body ">
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <p>29 January 2024</p>
-                    </div>
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions">
-                        <img src="./images/Ellipse 1.png" alt="">
-                        <div class="">
-                            <h1 class="font-semibold">Cameron Williamson</h1>
-                            <p>unknown</p>
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions">
+                            <img src="./images/Ellipse 1.png" alt="">
+                            <div class="">
+                                <h1 class="font-semibold">Cameron Williamson</h1>
+                                <p>unknown</p>
+                            </div>
                         </div>
+
                     </div>
-
                 </div>
-            </div>
-            
 
-    </section>
 
-</main>
-<!-- end main section  -->
-<!-- start footer section  -->
-<footer class="mt-20">
-    <section>
-        <footer class="footer footer-center p-10 bg-[#4348ee] text-primary-content">
-            <aside class="text-center">
-              <h1 class="text-4xl font-bold">ReTro</h1>
-              <p class="text-xl px-1 lg:px-96">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC
-              </p> 
-             
-            </aside> 
-            <nav>
-              <div class="grid grid-flow-col gap-4 text-4xl">
-                <a><i class="fa-brands fa-twitter"></i></a>
-                <a><i class="fa-brands fa-facebook"></i></a>
-                <a><i class="fa-brands fa-instagram"></i></a>
-                <a><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-            </nav>
-        
-            <p>Copyright © 2024 - All right reserved</p>
-          </footer>
-    </section>
-</footer>
+        </section>
+
+    </main>
+    <!-- end main section  -->
+    <!-- start footer section  -->
+    <footer class="mt-20">
+        <section>
+            <footer class="footer footer-center p-10 bg-[#4348ee] text-primary-content">
+                <aside class="text-center">
+                    <h1 class="text-4xl font-bold">ReTro</h1>
+                    <p class="text-xl px-1 lg:px-96">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC
+                    </p>
+
+                </aside>
+                <nav>
+                    <div class="grid grid-flow-col gap-4 text-4xl">
+                        <a><i class="fa-brands fa-twitter"></i></a>
+                        <a><i class="fa-brands fa-facebook"></i></a>
+                        <a><i class="fa-brands fa-instagram"></i></a>
+                        <a><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </nav>
+
+                <p>Copyright © 2024 - All right reserved</p>
+            </footer>
+        </section>
+    </footer>
 
 
 
