@@ -47,12 +47,10 @@
                         <!-- icon in mobaile menu  -->
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08]"><a><i
-                                        class="fa-solid fa-house"></i></a></li>
-
+                            <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08] ><a><i class=" fa-solid
+                                fa-house"></i></a></li>
                             <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08]"><a><i
                                         class="fa-solid fa-pen"></i></a></li>
-
                             <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08]"><a><i
                                         class="fa-solid fa-user-plus"></i></a></li>
                             <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08]"><a><i
@@ -65,16 +63,19 @@
                 <!-- large menu  -->
                 <div class="navbar-center hidden lg:flex ">
                     <ul class="menu menu-horizontal px-1 gap-5">
-                        <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08]"><a><i
-                                    class="fa-solid fa-house"></i></a></li>
+                        <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08] tooltip" data-tip="Home">
+                            <a><i class="fa-solid fa-house" data-tip="hello"></i></a>
+                        </li>
 
-                        <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08]"><a><i
-                                    class="fa-solid fa-pen"></i></a></li>
+                        <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08] tooltip" data-tip="Edit">
+                            <a><i class="fa-solid fa-pen"></i></a>
+                        </li>
 
-                        <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08]"><a><i
-                                    class="fa-solid fa-user-plus"></i></a></li>
-                        <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08]"><a><i
-                                    class="fa-regular fa-flag"></i></a></li>
+                        <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08] tooltip" data-tip="Add">
+                            <a><i class="fa-solid fa-user-plus"></i></a>
+                        </li>
+                        <li class="menu-icon border py-2 text-xl rounded-full bg-[#12132d08] tooltip"
+                            data-tip="Report problem"><a><i class="fa-regular fa-flag"></i></a></li>
 
                     </ul>
                 </div>
@@ -92,25 +93,27 @@
                 <img class="min-h-screen" src="./images/bgbanner.png" alt="">
 
                 <div class="absolute  bottom-0 top-0 lg:top-40 left-10 lg:left-28">
-                    <div class="flex flex-col lg:flex-row gap-0 lg:gap-40 "> 
+                    <div class="flex flex-col lg:flex-row gap-0 lg:gap-40 ">
                         <!-- banner left part  -->
                         <div class="flex-1 hero-content">
                             <div class="max-w-md">
-                                <h1 class="text-5xl font-bold text-white">
+                                <h1 class="text-5xl font-extrabold text-white">
                                     Welcome to the <br>
-                                    <span>ReTro</span> Forum
+                                    <span class="text-[#797DFC]">ReTro</span> Forum
                                 </h1>
-                                <p class="py-6 text-white">Share your favorite opinion and win and wp forum coffee mug!</p>
+                                <p class="py-6 text-white">Share your favorite opinion and win and wp forum coffee mug!
+                                </p>
                                 <div>
+                                    <!-- search button  -->
                                     <label class="input input-bordered flex items-center gap-2">
-                                        <input type="text" class="grow" placeholder="Search here anything" />
-                                        <button class="badge badge-info">Search</button>
+                                        <input id="search-input" type="text" class="grow" placeholder="Search here anything" />
+                                        <button onclick="searching()" id="search-btn" class="badge badge-info">Search</button>
                                     </label>
                                 </div>
                             </div>
-    
+
                         </div>
-    
+
                         <!-- banner right part  -->
                         <div class="border-2 bg-white p-5 lg:p-10 space-y-5 text-2xl rounded-2xl">
                             <div class="flex justify-between lg:gap-20">
@@ -130,12 +133,12 @@
                                 <h1>03</h1>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
 
-           
+
         </section>
 
 
@@ -157,58 +160,25 @@
 
             <!-- post section  -->
             <div class="mt-12 flex flex-col lg:flex-row gap-5">
+
                 <!-- left part -->
-                <div class="flex-1 border-2 border-[#797DFC] rounded-xl bg-[#797dfc1a] flex gap-3 p-5">
-                    <div>
-                        <img class="rounded-2xl" src="./images/bfebba8852c55c6d88733f6b810c30d5.png" alt="">
-                    </div>
-                    <div>
-                        <div class="flex gap-4 text-lg font-bold">
-                            <h1>#comedy</h1>
-                            <h1>authore : <span>imran khan</span></h1>
-                        </div>
-                        <h1 class="text-2xl font-bold my-4">10 Kids Unaware of Their Halloween Costume</h1>
-                        <p class="text-xl text-[#12132d99] font-bold">It’s one thing to subject yourself to ha Halloween
-                            costume mishap because, hey that’s your prerogative</p>
-                        <hr class="my-4">
-                        <div class="flex justify-between">
-                            <ul class="flex gap-5 text-[#12132d99] text-2xl">
-                                <li class=""><i class="fa-regular fa-message"></i><span class="ml-4">1050</span></li>
-                                <li><i class="fa-solid fa-eye"></i><span class="ml-4">1050</span></li>
-                                <li><i class="fa-regular fa-clock"></i><span class="ml-4">1050</span></li>
-
-                            </ul>
-                            <div class="text-3xl text-green-600">
-                                <button>
-                                    <i class="fa-solid fa-envelope-circle-check"></i>
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
+                <div id="post-conatiner" class="flex-1">
+                    <!-- all post here  -->
                 </div>
 
-                <!-- right part -->
-                <div class="rounded-2xl p-5 bg-[#12132d0d]">
+                <!-- right part read count-->
+                <div id="read-count-list" class="rounded-2xl p-5 bg-[#12132d0d]">
                     <div class="flex gap-10 p-5">
                         <h1 class="text-2xl font-bold">Title </h1>
                         <div class="flex gap-2">
                             <i class="fa-solid fa-check-double text-[#3DCE09] text-2xl"></i>
-                            <h1 class="text-2xl font-bold text-[#12132d99]">Mark as read (<span>4</span>)</h1>
+                            <h1 class="text-2xl font-bold text-[#12132d99]">Mark as read (<span
+                                    id="count-number">0</span>)</h1>
                         </div>
                     </div>
 
                     <!-- read list -->
-                    <div>
-                        <div class=" p-5 bg-white rounded-2xl flex gap-5 justify-center">
-                            <h1 class="text-xl font-bold">10 Kids Unaware of Their <br>
-                                Halloween Costume
-                            </h1>
-                            <div class="flex items-center text-2xl">
-                                <i class="fa-solid fa-eye "></i><span class="ml-4">1050</span>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- read list hear dainamically -->
                 </div>
             </div>
         </section>
@@ -239,78 +209,9 @@
             </div>
 
             <!-- card section  -->
-            <div class="mt-10 flex flex-col gap-3 lg:flex-row justify-around">
-                <!-- 1st card  -->
-                <div class="card w-96 bg-base-100 border">
-                    <figure class="px-10 pt-10">
-                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
-                            class="rounded-xl" />
-                    </figure>
-                    <div class="card-body ">
-                        <div class="flex gap-3 items-center">
-                            <i class="fa-regular fa-calendar-days"></i>
-                            <p>29 January 2024</p>
-                        </div>
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions">
-                            <img src="./images/Ellipse 1.png" alt="">
-                            <div class="">
-                                <h1 class="font-semibold">Cameron Williamson</h1>
-                                <p>unknown</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- 2nd card  -->
-                <div class="card w-96 bg-base-100 border">
-                    <figure class="px-10 pt-10">
-                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
-                            class="rounded-xl" />
-                    </figure>
-                    <div class="card-body ">
-                        <div class="flex gap-3 items-center">
-                            <i class="fa-regular fa-calendar-days"></i>
-                            <p>29 January 2024</p>
-                        </div>
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions">
-                            <img src="./images/Ellipse 1.png" alt="">
-                            <div class="">
-                                <h1 class="font-semibold">Cameron Williamson</h1>
-                                <p>unknown</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- 3rd card  -->
-                <div class="card w-96 bg-base-100 border">
-                    <figure class="px-10 pt-10">
-                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
-                            class="rounded-xl" />
-                    </figure>
-                    <div class="card-body ">
-                        <div class="flex gap-3 items-center">
-                            <i class="fa-regular fa-calendar-days"></i>
-                            <p>29 January 2024</p>
-                        </div>
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions">
-                            <img src="./images/Ellipse 1.png" alt="">
-                            <div class="">
-                                <h1 class="font-semibold">Cameron Williamson</h1>
-                                <p>unknown</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
+            <div id="latest-post" class="mt-10 flex items-center flex-col lg:flex-row gap-3 justify-around">
+                <!-- latest posts card here -->
+            </div>
         </section>
 
     </main>
