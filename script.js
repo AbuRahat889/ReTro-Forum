@@ -4,14 +4,14 @@ const allPost = async (postCetagory) => {
     const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${postCetagory}`);
     const data = await res.json();
     // console.log(data.posts);
-    
+
     const postContainer = document.getElementById('post-conatiner');
 
     // clear old data in post container 
     postContainer.textContent = '';
 
     data.posts.forEach((postItem) => {
-        console.log(postItem);    
+        // console.log(postItem);    
         const div = document.createElement('div');
         div.innerHTML = `
         <div class=" mb-5 border-2 border-[#797DFC] rounded-xl bg-[#797dfc1a] flex gap-3 p-5">
@@ -46,8 +46,8 @@ const allPost = async (postCetagory) => {
                 </ul>
 
                 <!-- mark as read btn  -->
-                <div id="read-btn" class="text-3xl text-green-600">
-                    <button  onclick="clicked('${postItem.title}','${postItem.view_count}')">
+                <div  class="text-3xl text-green-600">
+                    <button id= "mark-as-read" onclick="clicked('${postItem.title}','${postItem.view_count}') ; totalRead ()">
                     <i class="fa-solid fa-envelope-circle-check"></i> 
                     </button>
                 </div>
@@ -59,19 +59,29 @@ const allPost = async (postCetagory) => {
         postContainer.appendChild(div);
 
     });
-    
+
 }
 
+//read list counting
+let count = 0;
+const countNumber = document.getElementById('count-number');
+const markAsReadBtn = document.getElementById('mark-as-read');
+function totalRead (){
+    count ++;
+    countNumber.innerHTML = count;
+}
+
+
 //searching handelar
-function searching(){
-    const searchInput = document.getElementById('search-input').value;  
+function searching() {
+    const searchInput = document.getElementById('search-input').value;
     const resu = allPost(searchInput);
-    
+
 }
 
 //clicked use as read button 
 function clicked(postTitle, view) {
-   
+
     //find read list container
     const readCountList = document.getElementById('read-count-list');
     // show read list 
@@ -89,14 +99,14 @@ function clicked(postTitle, view) {
 }
 
 //loading Latest Posts
-const latestPost = async ()=>{
+const latestPost = async () => {
     const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/latest-posts');
     const data = await res.json();
     // console.log(data);
-    data.forEach((item ) => {
+    data.forEach((item) => {
         const latestPost = document.getElementById('latest-post');
         const div = document.createElement('div');
-        div.classList.add('card','w-96', 'bg-base-100', 'border')
+        div.classList.add('card', 'w-96', 'bg-base-100', 'border')
         div.innerHTML = `
         <figure class="px-10 pt-10">
         <img src="${item.cover_image}" alt="Shoes"
@@ -113,13 +123,13 @@ const latestPost = async ()=>{
             <img class="w-20 rounded-full " src="${item.profile_image}" alt="">
             <div class="">
                 <h1 class="font-semibold text-xl">${item.author.name}</h1>
-                <p>${item.author.designation ? `${item.author.designation }` : 'Unknown'}</p>
+                <p>${item.author.designation ? `${item.author.designation}` : 'Unknown'}</p>
             </div>
         </div>
 
     </div>
         `;
-       
+
         latestPost.appendChild(div);
         // const postDate = document.getElementById('post-date').innerText;
         // if(item.author.posted_date === true){
@@ -128,7 +138,7 @@ const latestPost = async ()=>{
         // else{
         //     postDate.innerHTML = 'Unknown';
         // }
-        
+
     });
 }
 
