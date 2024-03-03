@@ -3,7 +3,7 @@
 const allPost = async (postCetagory) => {
     const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${postCetagory}`);
     const data = await res.json();
-    console.log(data.posts);
+    // console.log(data.posts);
     
     const postContainer = document.getElementById('post-conatiner');
 
@@ -11,14 +11,15 @@ const allPost = async (postCetagory) => {
     postContainer.textContent = '';
 
     data.posts.forEach((postItem) => {
-        // console.log(postItem.title);    
+        console.log(postItem);    
         const div = document.createElement('div');
         div.innerHTML = `
         <div class=" mb-5 border-2 border-[#797DFC] rounded-xl bg-[#797dfc1a] flex gap-3 p-5">
 
+        <!-- post image  -->
         <div>
             <div class="indicator">
-                <span class="indicator-item badge bg-green-600"></span>
+                <span class="indicator-item badge ${postItem.isActive ? 'bg-green-600' : 'bg-red-600'}"></span>
                 <div class="grid w-32 h-32 bg-base-300 place-items-center">
                 <img src="${postItem.image}" alt="">
                 </div>
